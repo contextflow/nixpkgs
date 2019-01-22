@@ -24134,4 +24134,6 @@ in
 
   bemenu = callPackage ../applications/misc/bemenu { };
 
+  # Contextflow packages
+  dcmtk = callPackage ../contextflow/dcmtk { };
 }
