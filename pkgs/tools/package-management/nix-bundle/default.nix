@@ -3,13 +3,15 @@
 stdenv.mkDerivation rec {
   pname = "nix-bundle";
   name = "${pname}-${version}";
-  version = "0.3.0";
+  #version = "0.3.0";
+  version = "0.3.0+fix";
 
   src = fetchFromGitHub {
     owner = "matthewbauer";
     repo = pname;
-    rev = "v${version}";
-    sha256 = "084m9hqm1nhwln2sbg8ck2v2dprvpldxxqmd1r8fcj3dmn4bysz0";
+    #rev = "v${version}";
+    rev = "e65faad14f3becad4d8bd1db14f1287dd23ac1f3";
+    sha256 = "1crmg53qkpsvx0kczcldrwr5nhc8d05wfcjq0dn3bwxmmmgria7i";
   };
 
   # coreutils, gnutar is actually needed by nix for bootstrap
